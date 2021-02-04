@@ -74,6 +74,7 @@ const Store = (props) => {
                                                 src={`${API}/book/image/${book._id}`}
                                                 alt=""
                                                 className="img-fluid d-block mx-auto mb-3"
+                                                style={{height: '300px', width: '250px'}}
                                             />
 
                                         </Link>
@@ -84,7 +85,7 @@ const Store = (props) => {
                                             className="price">
                                             {`Rs ${book.price}`}
                                         </div>
-                                        <span className="small text-muted font-italic">{book.description}</span><br/>
+                                        <span className="small text-muted font-italic">{book.description.length > 32 ? book.description.substr(0, 30) + ' .....': book.description}</span><br/>
                                         <span className="small text-muted font-italic">By {book.authorName}</span>
                                         {showRating(book.rating)}
                                     </div>
