@@ -67,7 +67,7 @@ const Store = (props) => {
                     ) : (
                         popularBooks.map(book => (
                             <div key={book._id} className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                                <div className="card rounded shadow-sm border-0">
+                                <div className="card rounded mb-5 shadow-lg border-0">
                                     <div className="card-body p-4">
                                         <Link style={{textDecoration: 'none'}} to={`/book/${book._id}`}>
                                             <img
