@@ -16,6 +16,7 @@ const Routes = () => {
                 <AdminRoute path={URL.ROUTES.manage_book_page} exact component={WebContainer}/>
                 <AdminRoute path={URL.ROUTES.manage_categories_page} exact component={WebContainer}/>
                 <AdminRoute path={URL.ROUTES.add_admin_user_page} exact component={WebContainer}/>
+                <Route path="" exact component={WebContainer}/>
             </Switch>
         </BrowserRouter>
     )

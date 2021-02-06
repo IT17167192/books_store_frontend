@@ -8,6 +8,7 @@ import AddBook from "../admin/AddBook";
 import ManageBooks from "../admin/ManageBooks";
 import ManageCategories from "../admin/ManageCategories";
 import AddAdmin from "../admin/AddAdmin";
+import Page404 from "../common/Page404";
 
 const appendView = (history) => {
     if (history.location.pathname === Constants.ROUTES.landing_page) {
@@ -44,9 +45,7 @@ const appendView = (history) => {
         );
     }else{
         return (
-            <div>
-                Hello
-            </div>
+            <Page404 pathname={history.location.pathname} />
         );
     }
 };
