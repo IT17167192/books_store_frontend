@@ -1,9 +1,4 @@
 import React from 'react';
-import * as URL from "../../config";
-import * as Constants from "../../config";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPlusSquare} from "@fortawesome/free-solid-svg-icons/faPlusSquare";
-import {Link} from "react-router-dom";
 
 const Page404 = (props) => {
     return (
