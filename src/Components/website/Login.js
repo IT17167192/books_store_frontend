@@ -63,7 +63,7 @@ const Login = (props) => {
     }
 
     const showError = () => (
-        <div className="alert alert-danger text-center mt-3" style={{display: error ? '' : 'none'}}>
+        <div id="errorMessage" className="alert alert-danger text-center mt-3" style={{display: error ? '' : 'none'}}>
             {errorMessage}
         </div>
     );
@@ -96,14 +96,18 @@ const Login = (props) => {
                          <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
 
                         <label htmlFor="inputEmail" className="sr-only mt-5">Email address</label>
-                        <input type="email" id="inputEmail" className="form-control mt-5" placeholder="Email address"
+
+                        <input type="email" id="emailInputId" className="form-control mt-5" placeholder="Email address"
                                value={email}
                                onChange={handleOnChange('email')}/>
+
                         <label htmlFor="inputPassword" className="sr-only mt-2">Password</label>
+
                         <input type="password" id="inputPassword" className="form-control mt-2" placeholder="Password"
                                 value={password}
                                 onChange={handleOnChange('password')}/>
-                        <button className="btn btn-lg btn-primary btn-block mt-5" onClick={onClickSubmit} disabled={loading}>
+
+                        <button id="loginButton" className="btn btn-lg btn-primary btn-block mt-5" onClick={onClickSubmit} disabled={loading}>
                             { loading ? <CircularProgress size={20}/> : 'Login' }
                         </button>
                         {showError()}

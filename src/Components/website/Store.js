@@ -54,7 +54,7 @@ const Store = (props) => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-12 mb-3 mt-5" style={{fontSize: '30px', color: '#8C8887'}}>
+                <div id="title" className="col-md-12 mb-3 mt-5" style={{fontSize: '30px', color: '#8C8887'}}>
                     All Books
                 </div>
             </div>

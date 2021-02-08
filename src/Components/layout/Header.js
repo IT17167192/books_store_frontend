@@ -39,7 +39,7 @@ const Header = ({history}) => {
                         <Link className="nav-link" to={Constants.ROUTES.landing_page}>Home</Link>
                     </li>
                     <li className={isActive(history, Constants.ROUTES.store_page)}>
-                        <Link className="nav-link" to={Constants.ROUTES.store_page}>Store</Link>
+                        <Link id="storeLink" className="nav-link" to={Constants.ROUTES.store_page}>Store</Link>
                     </li>
                 </ul>
                 <ul className="navbar-nav justify-content-end">
